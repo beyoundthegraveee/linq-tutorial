@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t6Cze1Dh5GPB8pRgeO3jQ58ms3dK092keuDAADPyenNL/Y7f2k4DZLpMK/AMBB1dFRGwIZNDjr0oYDwH933Tjg==",
+  "dgSpecHash": "OGW89ax7vmi57Kl9kjrTNXHoQGQb3ikayZfC8h7xVNtbrX+VmJiOazzt1CtaE2GTkqkX9hXdfSjWKvbdwPEmzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\s24911\\Desktop\\LinqTasks\\LinqTutorials\\LinqTests\\LinqTests.csproj",
   "expectedPackageFiles": [
@@ -92,10 +92,7 @@
     "C:\\Users\\s24911\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\s24911\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\s24911\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\s24911\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+    "C:\\Users\\s24911\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }
