@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "FG4AdBjbP+Gqe6xs2I3HmQghbdcaJPe6WfUy2pVomAy7W1tRWtwVNzuQR1rmHV0cUgw6eYID10wKBNVgbUrNzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\s24911\\Desktop\\LinqTasks\\LinqTutorials\\LinqTasks\\LinqTasks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\s24911\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
