@@ -79,8 +79,8 @@ public static partial class Tasks
     ///     z elementów kolekcji pracuje jako "Backend programmer".
     /// </summary>
     public static bool Task8()
-    { 
-        return false;
+    {
+        return Emps.Any( i => i.Job == "Backend programmer");
     }
 
     /// <summary>
@@ -89,7 +89,7 @@ public static partial class Tasks
     /// </summary>
     public static Emp Task9()
     {
-        return null;
+        return Emps.Where(i => i.Job == "Frontend programmer").OrderByDescending(i => i.HireDate).FirstOrDefault();
     }
 
     /// <summary>
