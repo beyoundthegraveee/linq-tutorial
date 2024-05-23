@@ -99,7 +99,15 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<object> Task10()
     {
-        return null;
+        IEnumerable<object> result = Emps
+            .Select(emp => new { emp.Ename, emp.Job, emp.HireDate })
+            .Union(Emps.Select(emp => new {
+                Ename = "Brak wartości",
+                Job = string.Empty,
+                HireDate = (DateTime?)null
+            })).ToList();
+
+        return result;
     }
 
     /// <summary>
@@ -115,7 +123,13 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<object> Task11()
     {
-        return null;
+        IEnumerable<object> result = Emps
+            .Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new { dept.Dname, emp.Empno })
+            .GroupBy(dept => dept.Dname)
+            .Select(value => new { name = value.Key, numOfEmployees = value.Count() })
+            .Where(value => value.numOfEmployees > 1)
+            .ToList();
+        return result;
     }
 
     /// <summary>
@@ -140,7 +154,13 @@ public static partial class Tasks
     /// </summary>
     public static int Task13(int[] arr)
     {
-        return -1;
+        int result = arr.ToList()
+            .GroupBy(value => value.GetHashCode())
+            .Select(value => new { Value = value.Key, Times = value.Count() })
+            .Where(value => (value.Times % 2) != 0)
+            .Select(value => value.Value).FirstOrDefault();
+
+        return result;
     }
 
     /// <summary>
@@ -149,6 +169,24 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<Dept> Task14()
     {
-        return null;
+        IEnumerable<Dept> result = Depts.GroupJoin(Emps, dept => dept.Deptno, emp => emp.Deptno, (dept, emps) => new
+        {
+            Departament = dept,
+            Counter = emps.Count()
+        }).Where(record => record.Counter == 5 || record.Counter == 0).Select(record => record.Departament).ToList();
+
+        return result;
+    }
+    
+}
+public static class CustomExtensionMethods
+{
+    public static IEnumerable<Emp> GetEmpsWithSubordinates(this IEnumerable<Emp> emps)
+    {
+        var result = emps
+            .Where(e => emps.Any(sub => sub.Mgr != null && sub.Mgr.Empno == e.Empno))
+            .OrderBy(e => e.Ename)
+            .ThenByDescending(e => e.Salary);
+        return result;
     }
 }
